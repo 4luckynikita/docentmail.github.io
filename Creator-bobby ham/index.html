@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title 4 yo </title>
+</head>
+<body>
+    
+ <h2> Question Maker</h2>
+     <p>Title:</p><input type="text" id="title">
+     <p>Question:</p><input type="text" id="question">
+    <p>Code:</p><textarea rows="6" cols="21"  id="code"></textarea>
+    <p>Hint:</p><input type="text" id="hint">
+    <p>Answer:</p><input type="text" id="answer">
+     <br>
+     <button onclick="createquestion()">Make Question</button>
+     
+     <h2>Question Preview</h2>
+     
+     <h2 id="title1"></h2>
+     <br>
+     <h3>Question</h3>
+     <h4 id="question1"></h4>
+     <textarea id="code1" cols="30" rows="10"></textarea>
+     <p id="hint1"></p>
+     <h5 id="answer1"></h5>
+<script>
+
+
+
+    var stuff = {
+        title: "lol",
+        question:"agdbh",
+        code:"uwhdhjed",
+        hint:"gyewfy",
+        answer:"jwefed",
+    }
+
+
+function createquestion(){
+    stuff.title = document.getElementById("title").value;
+    stuff.question = document.getElementById("question").value;
+    stuff.code = document.getElementById("code").value;
+    stuff.hint = document.getElementById("hint").value;
+    stuff.answer = document.getElementById("answer").value;
+    
+    document.getElementById("title1").innerHTML=stuff.title;
+    document.getElementById("question1").innerHTML=stuff.question;
+    document.getElementById("code1").innerHTML=stuff.code;
+    document.getElementById("hint1").innerHTML=stuff.hint;
+    document.getElementById("answer1").innerHTML=stuff.answer;
+    
+}
+
+</script>
+
+
+</body>
+</html>
