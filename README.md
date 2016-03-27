@@ -1,2 +1,2 @@
 # docentmail.github.io
-To get more information look at  [webculum.org](http://webculum.org).
+To get more information look att  [webculum.org](http://webculum.org).
